@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Insurance</title>
+</head>
+<body>
+    <h1>Welcome to Insurance</h1>
+    <p>We provide various insurance services to protect your assets and well-being.</p>
+    
+    <div>
+        <h2>Choose an option:</h2>
+        <a th:href="@{/login}" class="button">Login</a>
+        <a th:href="@{/register}" class="button">Register</a>
+    </div>
+    
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+</body>
+</html>
